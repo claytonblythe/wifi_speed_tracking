@@ -9,8 +9,8 @@ Background: I was finding myself disappointed and frustrated with the speed of t
 that allows you to test your wifi speed from the command line. I then piped this result to a wireless speed log file in text form. Finally, I automated
 this process with a crontab command, and created a python file to clean the wireless speed log file and plot it in matplotlib. Below is an example of the
 result. 
-[!Alt Test](https://github.com/claytonblythe/wifi_speed_tracking/blob/master/figures/wireless_speeds_Apr_10_08:13_.pdf)
 
+![Alt Test](https://github.com/claytonblythe/wifi_speed_tracking/blob/master/figures/wireless_speeds_Apr_10_09:01_.png)
 
 
 Here it looks like that the wifi speed that I've been connected has been quite variable over the past couple months that I've been tracking it. 
