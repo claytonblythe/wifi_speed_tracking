@@ -9,6 +9,11 @@ that allows you to test your wifi speed from the command line. I then piped this
 this process with a crontab command, and created a python file to clean the wireless speed log file and plot it in matplotlib. Below is an example of the
 result. 
 
+I used a crontab command of the following form to run every 60 minutes. 
+
+*/60 * * * * (date >> /users/claytonblythe/Desktop/Mega/Data_Science/projects/wifi_speed_tracking/code/wireless_speeds.log) && (/usr/local/bin/speedtest-cli --simple | sed -n 2,3p >> /users/claytonblythe/Desktop/Mega/Data_Science/projects/wifi_speed_tracking/code/wireless_speeds.log) &
+
+
 ![Alt Test](https://github.com/claytonblythe/wifi_speed_tracking/blob/master/figures/wireless_speeds_Apr_10_09:01_.png)
 
 
