@@ -24,3 +24,4 @@ over time depending on the various locations/cities that I am located in.
 Another interesting possibility is to do this tracking for the rest of my life, to get a real first-hand measure of how quickly wifi speeds have increased
 throughout my lifetime. I think that this type of data would be really interesting, as it would provide real data for my specific experiences.
 
+![Alt Test](https://github.com/claytonblythe/wifi_speed_tracking/blob/master/figures/wireless_speeds_Apr_23_10:03_.png)
