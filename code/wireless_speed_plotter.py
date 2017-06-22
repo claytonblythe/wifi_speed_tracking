@@ -50,13 +50,13 @@ print(len(lines))
 download_speeds = [i[10:15] for i in lines if 'Download' in i]
 download_speeds_floats= [float(i) for i in download_speeds]
 upload_speeds = [i[8:12] for i in lines if 'Upload' in i]
-date_times = [i[:-1] for i in lines if 'CST' in i or 'CDT' in i or 'MST' in i]
+date_times = [i[:-1] for i in lines if 'CST' in i or 'CDT' in i or 'MST' in i or 'EDT' in i]
 
 date_times_parsed=[i[11:16] for i in date_times]
 #print(date_times_parsed)
 #print(date_times)
 date_times = [i.replace('MST', 'CST') for i in date_times]
-
+date_times = [i.replace('EDT', 'CST') for i in date_times]
 
 converted_times = [datetime.strptime(i, "%a %b %d %H:%M:%S %Z %Y") for i in date_times]  
 dates = matplotlib.dates.date2num(converted_times)
