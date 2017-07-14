@@ -8,6 +8,7 @@
 
 #clean up the wirless log file
 import os, pandas as pd
+from matplotlib.ticker import LinearLocator
 count = 0
 clean_data = ""
 
@@ -78,7 +79,7 @@ ax.plot_date(dates[6:-6],y_av[6:-6], ls='solid', color='r', label="running avera
 
 #This finds the correct locations for certain hours to place the ticks, and also
 #does the formatting for the labels
-ax.xaxis.set_major_locator(HourLocator(range(0,1,1)))
+ax.xaxis.set_major_locator(LinearLocator(numticks=20))
 ax.xaxis.set_major_formatter(DateFormatter('%b %dth\n'))
 plt.ylabel("(Mb/s)", fontsize=23)
 plt.title("Wireless Speed Over Time", fontsize=28)
