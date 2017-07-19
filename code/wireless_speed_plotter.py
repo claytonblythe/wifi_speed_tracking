@@ -12,7 +12,7 @@ from matplotlib.ticker import LinearLocator
 count = 0
 clean_data = ""
 
-with open("wireless_speeds.log", "r") as f:
+with open("/users/claytonblythe/Desktop/Mega/Data_Science/projects/wifi_speed_tracking/code/wireless_speeds.log", "r") as f:
     lines = f.readlines()
 #print(lines)
 
@@ -23,7 +23,7 @@ for i in range(0,len(lines)):
         clean_data += lines[i]
 
 #print(clean_data)
-file1 = open("clean_wireless.log","w")
+file1 = open("/users/claytonblythe/Desktop/Mega/Data_Science/projects/wifi_speed_tracking/code/clean_wireless.log","w")
 file1.write(clean_data)
 file1.close()
 
